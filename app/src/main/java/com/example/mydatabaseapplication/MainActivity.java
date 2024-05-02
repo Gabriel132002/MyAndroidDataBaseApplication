@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<String> arrayListNames = new ArrayList<>();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, R.layout.custom_list_view, arrayListNames);
+        
 
         listViewShowData = findViewById(R.id.mainActivity_listView);
         editTextName = findViewById(R.id.mainActivity_editText_name);
