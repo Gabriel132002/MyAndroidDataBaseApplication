@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/linearLayoutButton_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Limpar"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/linearLayoutButton_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Salvar"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/linearLayoutButton_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Excluir"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainActivity_title_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicação de banco de dados"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/mainActivity_editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/mainActivity_title_page"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/edit_text_custom"
+        android:hint="Código"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:enabled="false"
+        />
+
+    <EditText
+        android:id="@+id/mainActivity_editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivity_editText_id"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:inputType="text"
+        android:background="@drawable/edit_text_custom"
+        android:textColor="@color/black"
+        android:hint="Nome..."
+        android:textColorHint="@color/gray"
+        />
+    <EditText
+        android:id="@+id/mainActivity_editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivity_editText_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_custom"
+        android:hint="Email..."
+        android:textColorHint="@color/gray"
+        />
+    <EditText
+        android:id="@+id/mainActivity_editText_cellPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivity_editText_email"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_custom"
+        android:hint="Telefone..."
+        android:textColorHint="@color/gray"
+        />
+
+    <ListView
+        android:id="@+id/mainActivity_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivity_linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+
+
+    <include
+        android:id="@+id/mainActivity_linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/linear_button_layout"
+        android:layout_below="@+id/mainActivity_editText_cellPhone"
+        />
+
+
+
+
+</RelativeLayout>
